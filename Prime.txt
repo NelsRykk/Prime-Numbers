@@ -1,0 +1,76 @@
+Module Module1
+    Dim spam As Integer
+    Dim prime As Integer
+    Dim remainder As Integer = Nothing
+    Dim i As Integer
+    Dim seven As Integer
+    Dim five As Integer
+    Dim three As Integer
+    Dim two As Integer
+    Dim t1 As Integer
+    Dim t2 As Integer
+    Dim t3 As Integer
+    Dim t4 As Integer
+    Sub Main()
+        For i = 1 To 1000
+            spam = i
+            two = spam Mod 2
+            three = spam Mod 3
+            five = spam Mod 5
+            seven = spam Mod 7
+            t1 = 0
+            t2 = 0
+            t3 = 0
+            t4 = 0
+
+
+
+            If spam = 2 Then
+                prime = 2
+                Module2()
+            End If
+            If spam = 3 Then
+                prime = 3
+                Module2()
+            End If
+            If spam = 5 Then
+                prime = 5
+                Module2()
+            End If
+            If spam = 7 Then
+                prime = 7
+                Module2()
+            End If
+
+
+            If two > 0 Then
+                t1 = 1
+            End If
+            If three > 0 Then
+                t2 = 1
+            End If
+            If five > 0 Then
+                t3 = 1
+            End If
+            If seven > 0 Then
+                t4 = 1
+            End If
+
+            If t1 = t2 And t3 = t4 And t2 = t3 And t1 = 1 Then
+                prime = spam
+                module2()
+
+            End If
+
+        Next
+    End Sub
+
+    Sub Module2()
+        Console.WriteLine(prime)
+        Console.ReadLine()
+    End Sub
+
+
+
+
+End Module
